@@ -1,0 +1,2 @@
+python src/official.py --tag baseline
+python src/official.py --tag baseline --seed 1
