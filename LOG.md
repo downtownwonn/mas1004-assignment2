@@ -28,3 +28,10 @@ End the log with your plan for what to try next.
 - validation: Pending training (previous run: 0.4649).
 - what it means: Awaiting the result and the student's interpretation. Both flip and weight decay differ from the previous run, so this comparison does not isolate weight decay.
 - next: Run the quick check, then one full run on Colab; compare against labels0389_no_flip and ask the student what the result means.
+
+## Planned: no_indoor_wd01 (Track A)
+- changed: Exclude only assigned label 1 (indoors); restore labels 2, 4, 5, 6 and 7. Keep horizontal flips and weight_decay=0.1, all other recipe settings, seed 0 and the official training budget unchanged. Respect existing dropped.csv entries.
+- why (student): "나름 잘했네 그럼 이번엔 실내라벨 데이터만 빼고 훈련돌려보자 트랙a로 colab" (after viewing a random sample of 100 label-1 photos).
+- validation: Pending training; no result assumed for labels0389_flip_wd01.
+- what it means: Awaiting the result and the student's interpretation.
+- next: Quick check followed by one full Colab run. Queue replaces the previous commands; it does not rerun the previous selection.

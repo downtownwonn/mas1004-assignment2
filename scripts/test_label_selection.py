@@ -25,11 +25,13 @@ class SelectionTests(unittest.TestCase):
         dropped_file = ROOT / "track_a/dropped.csv"
         dropped = {r["path"] for r in read_csv(dropped_file)} if dropped_file.exists() else set()
         expected = sorted(r["path"].removeprefix("data/starter/train/") for r in self.rows
-                          if r["assigned_label"] in {"0", "3", "8", "9"}
+                          if r["assigned_label"] != "1"
                           and r["path"].removeprefix("data/starter/train/") not in dropped)
         self.assertEqual(self.selected, expected)
         self.assertEqual(len(self.selected), len(set(self.selected)))
-        self.assertEqual(len(self.selected), 26501)
+        self.assertEqual(len(self.selected), len(expected))
+        if not dropped:
+            self.assertEqual(len(self.selected), 39756)
 
     def test_human_labels_take_priority(self):
         humans = [r for r in self.rows if r["human_label"] != ""]

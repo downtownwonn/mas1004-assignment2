@@ -3,28 +3,28 @@
   "source_sha256": "d04ff880926cca8870cc6f27884d3f3ee7eb8f2cbb5ac498d9bed6f2e5fb4b36",
   "kept_assigned_labels": [
     "0",
+    "2",
     "3",
+    "4",
+    "5",
+    "6",
+    "7",
     "8",
     "9"
   ],
   "excluded_assigned_labels": [
-    "1",
-    "2",
-    "4",
-    "5",
-    "6",
-    "7"
+    "1"
   ],
   "human_labels_preserved_in_source": true,
   "previous_dropped_paths_respected": 0,
-  "selected": 26501,
-  "not_selected": 17756,
+  "selected": 39756,
+  "not_selected": 4501,
   "counts": {
-    "busan": 2652,
-    "osaka": 4106,
-    "seoul": 6808,
-    "taipei": 3627,
-    "tokyo": 9308
+    "busan": 4532,
+    "osaka": 6244,
+    "seoul": 10125,
+    "taipei": 6439,
+    "tokyo": 12416
   },
-  "selection_sha256": "22f50d41944aa0d681ae210d722775b9fa686f0248676dc2c37c78244c1305e0"
+  "selection_sha256": "adf90bb165022c7f6fbc39ecaa76169990632be5b5a9f89856c629dee5af8346"
 }
