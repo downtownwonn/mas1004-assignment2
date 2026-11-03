@@ -1,3 +1,1 @@
-python src/curate.py mistakes results/baseline_seed0/model.onnx
-python src/curate.py mistakes results/baseline_seed1/model.onnx
-python src/curate.py suspects results/baseline_seed1/model.onnx --n 480
+python src/official.py --tag labels0389_no_flip

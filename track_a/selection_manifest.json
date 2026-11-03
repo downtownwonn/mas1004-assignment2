@@ -1,0 +1,30 @@
+{
+  "source": "results\\photo_labels_f369cab88482\\all_assignments.csv",
+  "source_sha256": "d04ff880926cca8870cc6f27884d3f3ee7eb8f2cbb5ac498d9bed6f2e5fb4b36",
+  "kept_assigned_labels": [
+    "0",
+    "3",
+    "8",
+    "9"
+  ],
+  "excluded_assigned_labels": [
+    "1",
+    "2",
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "human_labels_preserved_in_source": true,
+  "previous_dropped_paths_respected": 0,
+  "selected": 26501,
+  "not_selected": 17756,
+  "counts": {
+    "busan": 2652,
+    "osaka": 4106,
+    "seoul": 6808,
+    "taipei": 3627,
+    "tokyo": 9308
+  },
+  "selection_sha256": "22f50d41944aa0d681ae210d722775b9fa686f0248676dc2c37c78244c1305e0"
+}
