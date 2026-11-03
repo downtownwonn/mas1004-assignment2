@@ -21,3 +21,10 @@ End the log with your plan for what to try next.
 - what it means (student): "내 생각에는 4번이 유력한 원인이거든 사진 수는 줄었는데 학습횟수는 그대로라 같은 사진을 여러번 봤다는거말이야"
 - interpretation status: This is the student's hypothesis, not an established cause; filtering and flip removal were changed together.
 - next (student): Release this version to observe the leaderboard, then test an improvement addressing repeated exposure. The next method is not yet selected; Track A fixes the training budget at 250,000 photos.
+
+## Planned: labels0389_flip_wd01 (Track A)
+- changed: Keep the same 26,501-photo selection; restore RandomHorizontalFlip (default probability 0.5); increase AdamW weight_decay from 0.05 to 0.1. Other recipe settings and the official budget unchanged; seed 0 only.
+- why (student): "좌우반전 제거하지말고 weightdecay를 0.1로 높여서 과도 맞춤 억제하는 식으로 다시 학습가자"
+- validation: Pending training (previous run: 0.4649).
+- what it means: Awaiting the result and the student's interpretation. Both flip and weight decay differ from the previous run, so this comparison does not isolate weight decay.
+- next: Run the quick check, then one full run on Colab; compare against labels0389_no_flip and ask the student what the result means.

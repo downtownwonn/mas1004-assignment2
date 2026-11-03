@@ -44,12 +44,20 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(manifest["source_sha256"],
                          hashlib.sha256((ROOT / manifest["source"]).read_bytes()).hexdigest())
 
-    def test_only_flip_removed_from_transform(self):
+    def test_requested_transform_with_flip(self):
         tree = ast.parse((ROOT / "track_a/recipe.py").read_text(encoding="utf-8"))
         transform = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == "train_transform")
         calls = [n.func.attr for n in ast.walk(transform)
                  if isinstance(n, ast.Call) and isinstance(n.func, ast.Attribute)]
-        self.assertEqual(set(calls), {"Compose", "RandomResizedCrop", "ColorJitter"})
+        self.assertEqual(set(calls), {"Compose", "RandomResizedCrop", "RandomHorizontalFlip", "ColorJitter"})
+
+    def test_requested_optimizer_settings(self):
+        tree = ast.parse((ROOT / "track_a/recipe.py").read_text(encoding="utf-8"))
+        optimizer = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == "make_optimizer")
+        call = optimizer.body[0].value
+        self.assertEqual(call.func.attr, "AdamW")
+        self.assertEqual({k.arg: ast.literal_eval(k.value) for k in call.keywords},
+                         {"lr": 3e-4, "weight_decay": 0.1})
 
 
 if __name__ == "__main__":
