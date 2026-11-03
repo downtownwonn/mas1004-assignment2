@@ -1,1 +1,2 @@
+python src/official.py --quick --tag labels0389_no_flip_quick --no-log
 python src/official.py --tag labels0389_no_flip
