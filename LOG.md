@@ -13,3 +13,11 @@ End the log with your plan for what to try next.
 - validation: 0.000 (before: 0.000)
 - what it means: what you think the result says
 -->
+
+## 2026-11-04 labels0389_no_flip (Track A)
+- changed: Assigned labels 1, 2, 4, 5, 6 and 7 excluded; 26,501 photos retained. Removed horizontal flips; other recipe settings unchanged. Human labels take priority over automatic assignments.
+- why: Original motivation for these two changes has not yet been provided by the student.
+- validation: 0.4649 (baseline seed 0: 0.4931; baseline seed 1: 0.4946). Official seed 0 run, 249,984 photo presentations, commit 1b98a91.
+- what it means (student): "내 생각에는 4번이 유력한 원인이거든 사진 수는 줄었는데 학습횟수는 그대로라 같은 사진을 여러번 봤다는거말이야"
+- interpretation status: This is the student's hypothesis, not an established cause; filtering and flip removal were changed together.
+- next (student): Release this version to observe the leaderboard, then test an improvement addressing repeated exposure. The next method is not yet selected; Track A fixes the training budget at 250,000 photos.
