@@ -29,9 +29,9 @@ End the log with your plan for what to try next.
 - what it means: Awaiting the result and the student's interpretation. Both flip and weight decay differ from the previous run, so this comparison does not isolate weight decay.
 - next: Run the quick check, then one full run on Colab; compare against labels0389_no_flip and ask the student what the result means.
 
-## Planned: no_indoor_wd01 (Track A)
+## 2026-11-04 no_indoor_wd01 (Track A)
 - changed: Exclude only assigned label 1 (indoors); restore labels 2, 4, 5, 6 and 7. Keep horizontal flips and weight_decay=0.1, all other recipe settings, seed 0 and the official training budget unchanged. Respect existing dropped.csv entries.
 - why (student): "나름 잘했네 그럼 이번엔 실내라벨 데이터만 빼고 훈련돌려보자 트랙a로 colab" (after viewing a random sample of 100 label-1 photos).
-- validation: Pending training; no result assumed for labels0389_flip_wd01.
+- validation: 0.4831 (labels0389_no_flip: 0.4649; baseline seed 0: 0.4931; baseline seed 1: 0.4946). Official seed 0 run, 249,984 photo presentations, 39,756 selected photos, commit 74af675. Training took 2227.6 seconds (37.1 minutes) on CUDA. Imported from Downloads/from_colab (6).zip; result.json and experiments.csv agree. Recipe and selection hashes match local contents after newline normalization.
 - what it means: Awaiting the result and the student's interpretation.
-- next: Quick check followed by one full Colab run. Queue replaces the previous commands; it does not rerun the previous selection.
+- next (student): "일단 이번 버전으로 릴리즈 한번 해줘봐 리더보드 점수 어떻게 나오나 함 보게". Release title chosen by the student: "실내 라벨만 제외, 좌우반전 유지, weight decay 0.1". Compared with labels0389_no_flip, selection, flips and weight decay all differ; compared with baseline, selection and weight decay differ. Neither comparison isolates indoor-photo exclusion. No completed labels0389_flip_wd01 run is recorded in experiments.csv.
