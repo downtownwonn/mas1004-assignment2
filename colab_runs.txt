@@ -1,4 +1,4 @@
-python src/official.py --quick --tag no_indoor_wd01_quick --no-log
-python src/official.py --tag no_indoor_wd01 --seed 0
+# python src/official.py --quick --tag no_indoor_wd01_quick --no-log
+# python src/official.py --tag no_indoor_wd01 --seed 0
 python src/train_b.py --tag b_baseline --submit
 python src/check_submission.py --no-val
