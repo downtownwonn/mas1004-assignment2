@@ -98,3 +98,9 @@ C:\Users\신혜원\Documents\mas1004-assignment2\submission\model.onnx: 16.8 MB,
 
 ```
 - Model SHA256: 342841a489a4f2a9da83a09e2d0055ea257039c7795ed2e74d6e27b20b3e4f0a
+
+## Track A release: track-a-4
+- Student requested the completed no_indoor_wd01_balanced recipe (validation 0.4999).
+- Title chosen by student: 실내 제외 + 도시 균형 샘플링.
+- Recipe and selection hashes match the original completed run after newline normalization.
+- Pre-release quick check passed; quick score is not the full-run validation score.
