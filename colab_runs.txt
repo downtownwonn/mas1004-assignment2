@@ -10,5 +10,7 @@
 # python src/check_submission.py --submission results/b_mobilenet320_balanced --no-val
 # python src/train_b.py --tag b_mobilenet512_balanced --model mobilenet_v3_large --size 512 --balance
 # python src/check_submission.py --submission results/b_mobilenet512_balanced --no-val
-python src/train_b.py --tag b_mobilenet224_friends_osaka --model mobilenet_v3_large --size 224 --epochs 4 --balance --folders data/starter/train data/mine
-python src/check_submission.py --submission results/b_mobilenet224_friends_osaka --no-val
+# python src/train_b.py --tag b_mobilenet224_friends_osaka --model mobilenet_v3_large --size 224 --epochs 4 --balance --folders data/starter/train data/mine
+# python src/check_submission.py --submission results/b_mobilenet224_friends_osaka --no-val
+python src/official.py --quick --tag no_indoor_wd01_balanced_quick --no-log
+python src/official.py --tag no_indoor_wd01_balanced --seed 0
