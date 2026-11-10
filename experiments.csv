@@ -5,3 +5,8 @@ finished,track,tag,seed,official_budget,budget,val_score,seoul,busan,tokyo,osaka
 2026-11-04T21:07:46,A,no_indoor_wd01,0,True,249984,0.4831,0.5914,0.3799,0.6166,0.3388,0.4891,2227.6,cuda,"selection.csv, 39756 rows",9a892537ac14,adf90bb16502,74af675
 2026-11-04T02:00:56,A,labels0389_flip_wd01,0,True,249984,0.4636,0.5713,0.359,0.5818,0.3463,0.4597,2127.6,cuda,"selection.csv, 26501 rows",9a892537ac14,22f50d41944a,e533036
 2026-11-05T17:10:42,B,b_baseline,,,176896,0.4856,0.5766,0.3741,0.6272,0.3426,0.5078,1782.2,cuda,resnet18 224px; data/starter/train,,,c47df18
+2026-11-10T10:50:49,B,b_mobilenet224,,,176896,0.5145,0.5581,0.4115,0.6542,0.3863,0.5622,1777.3,cuda,mobilenet_v3_large 224px; data/starter/train,,,fdb47df
+2026-11-10T15:38:22,B,b_mobilenet224_balanced,,,176896,0.5175,0.5064,0.5,0.5308,0.4366,0.6139,1605.3,cuda,mobilenet_v3_large 224px; data/starter/train,,,ea59277
+2026-11-10T16:25:48,B,b_mobilenet320_balanced,,,176896,0.5496,0.5573,0.4899,0.5756,0.4897,0.6353,2243.9,cuda,mobilenet_v3_large 320px; data/starter/train,,,1ae8bb9
+2026-11-10T17:58:36,B,b_mobilenet512_balanced,,,176896,0.5502,0.5388,0.4525,0.5596,0.5061,0.6942,4274.8,cuda,mobilenet_v3_large 512px; data/starter/train,,,a426a12
+2026-11-10T21:21:05,A,no_indoor_wd01_balanced,0,True,249984,0.4999,0.5133,0.4511,0.5421,0.4492,0.5435,2231.0,cuda,"selection.csv, 39756 rows",627c95a71018,adf90bb16502,eaea720
