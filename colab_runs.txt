@@ -2,5 +2,7 @@
 # python src/official.py --tag no_indoor_wd01 --seed 0
 # python src/train_b.py --tag b_baseline --submit
 # python src/check_submission.py --no-val
-python src/train_b.py --tag b_mobilenet224 --model mobilenet_v3_large
-python src/check_submission.py --submission results/b_mobilenet224 --no-val
+# python src/train_b.py --tag b_mobilenet224 --model mobilenet_v3_large
+# python src/check_submission.py --submission results/b_mobilenet224 --no-val
+python src/train_b.py --tag b_mobilenet224_balanced --model mobilenet_v3_large --balance
+python src/check_submission.py --submission results/b_mobilenet224_balanced --no-val
