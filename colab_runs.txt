@@ -4,5 +4,7 @@
 # python src/check_submission.py --no-val
 # python src/train_b.py --tag b_mobilenet224 --model mobilenet_v3_large
 # python src/check_submission.py --submission results/b_mobilenet224 --no-val
-python src/train_b.py --tag b_mobilenet224_balanced --model mobilenet_v3_large --balance
-python src/check_submission.py --submission results/b_mobilenet224_balanced --no-val
+# python src/train_b.py --tag b_mobilenet224_balanced --model mobilenet_v3_large --balance
+# python src/check_submission.py --submission results/b_mobilenet224_balanced --no-val
+python src/train_b.py --tag b_mobilenet320_balanced --model mobilenet_v3_large --size 320 --balance
+python src/check_submission.py --submission results/b_mobilenet320_balanced --no-val
